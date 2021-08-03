@@ -1,0 +1,56 @@
+.advantages
+    background-color: #f6f6f6
+    padding: 60px 0 80px 0
+    
+    &__wrapper
+        margin-top: 65px
+        display: flex
+        justify-content: space-between
+    &__item 
+        width: 30%
+        text-align: center
+    &__item-title
+        margin-top: 38px
+        font-size: 18px
+        font-weight: 700
+        color: #0d0d0d
+    &__item-text
+        margin: 0 auto
+        max-width: 245px
+        margin-top: 26px
+        line-height: 1.2
+        font-size: 14px
+        font-weight: 500
+        color: #0d0d0d
+        a
+            text-decoration: none
+            color: #ff0000  
+            &:hover
+                text-decoration: underline
+                color: #ff0000
+
+@media ( max-width:990px )
+    .advantages
+        padding: 50px 0 65px 0
+        &__title
+            font-size: 28px
+        &__wrapper
+            margin-top: 10px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        &__item 
+            margin-top: 40px
+            width: 100%
+            text-align: center
+        &__item-title
+            margin-top: 10px
+            font-size: 18px
+        &__item-text
+            max-width: 300px
+            margin-top: 10px
+            font-size: 14px
+
+@media ( max-width:575px )
+    .advantages
+        padding: 50px 5px 65px 5px

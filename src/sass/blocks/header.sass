@@ -1,0 +1,98 @@
+.logo_mini
+    display: none
+.header
+    padding-top: 21px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__logo
+        width: 250px
+    &__img
+        width: 100%
+    &__official
+        font-size: 12px
+        font-weight: 500
+        color: #ffffff
+        text-align: center
+        line-height: 1.4
+        &_big
+            margin-top: 7px
+            font-size: 18px
+            font-weight: 700
+            color: #ffffff
+    &__contacts
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        padding-left: 82px
+    &__phone
+        display: block
+        text-align: center
+        font-size: 18px
+        font-weight: 700
+        color: #ffffff
+        &:hover
+            text-decoration: underline
+            color: #ffffff
+    &__button
+        margin-top: 8px
+        width: 150px
+        height: 30px
+        font-size: 12px
+      
+
+
+@media ( max-width:1200px )
+    .header
+        &__contacts
+            padding-left: 30px
+
+@media ( max-width:990px )
+    .header
+        &__logo
+            width: 200px
+        &__img
+            width: 100%
+        &__official
+            font-size: 11px
+            &_big
+                margin-top: 5px
+                font-size: 16px
+        &__contacts
+            padding-left: 10px
+        &__phone
+            font-size: 16px
+        &__button
+            margin-top: 6px
+            width: 140px
+            height: 25px
+            font-size: 11px
+            
+@media ( max-width:767px )
+    .header
+        &__official
+            display: none
+
+@media ( max-width:575px )  
+     
+    .header
+        &__logo
+            width: 130px
+        &__img
+            display: none
+            width: 100%
+            height: 30px
+        &__contacts
+            align-items: center
+            padding-left: 5px
+        &__phone
+            font-size: 12px
+        &__button
+            line-height: 1.1
+            margin-top: 6px
+            width: 100px
+            height: 27px
+            font-size: 11px
+    .header .logo_mini
+            display: block
+    
