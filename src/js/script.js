@@ -1,11 +1,13 @@
-"use strict"
 
-// let admin, userName;
 
-// userName = 'Джон';
 
-// admin = userName;
 
-// console.log(admin); 
 
-let earth, userName
+let age = prompt("Сколько Вам лет?, '' ")    
+let message;
+
+if (age !>= 14 && age !<= 90) {
+    message = 'Вы проходите';
+};
+
+alert( message )
