@@ -1,0 +1,76 @@
+.feedback
+    padding-bottom: 70px
+    hr
+        height: 1px
+        background-color: #f6f6f6
+        margin: 45px 0 52px 0
+        border: none
+    &__item
+    &__img
+        margin-right: 60px
+        height: 169px
+        width: 169px
+        display: inline-block
+        vertical-align: top
+    &__text
+        display: inline-block
+        max-width: 656px    
+    &__username
+        font-size: 18px
+        line-height: 1
+        font-weight: 700
+        color: #0d0d0d
+    &__achievement
+        margin-top: 10px
+        font-size: 14px
+        line-height: 1
+        font-weight: 300
+        color: #646464
+    &__comment
+        margin-top: 18px
+        font-size: 16px
+        line-height: 1.2
+        font-weight: 500
+        color: #0d0d0d
+
+            
+            
+
+@media ( max-width:1200px )
+    .feedback
+        &__item
+            margin-left: 50px
+        hr
+            margin: 30px 0 30px 0
+        &__img
+            margin-right: 50px
+            margin-bottom: 20px
+            width: 120px
+            height: 120px
+        &__text
+            max-width: 400px
+
+
+
+        
+
+@media ( max-width:575px )
+    .feedback
+        &__item
+            margin-left: 0
+        &__img
+            display: block
+            margin: 0 auto 30px auto
+        &__text
+            max-width: 100%
+        &__username
+            text-align: center
+        &__achievement
+            text-align: center
+        &__comment
+            margin-top: 35px
+            padding-left: 50px
+            padding-right: 50px
+                
+
+

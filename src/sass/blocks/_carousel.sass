@@ -1,0 +1,64 @@
+.carousel
+    padding: 82px 0 
+    &__inner
+        margin: 0 auto
+        max-width: 750px
+        position: relative
+    .slick-prev, .slick-next
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -66px
+        border: none
+        background-color: #fff
+        transition: 0.5s all
+        img
+            width: 31px
+            height: 50px
+    .slick-next
+        left: auto
+        right: -66px
+    .slick-dots
+        transition: 1s all
+        margin-top: 30px
+        list-style: none
+        display: flex !important
+        justify-content: center
+        vertical-align: middle
+        button
+            padding: 0
+            margin: 0 10px
+            width: 6px
+            height: 6px
+            border-radius: 50%
+            font-size: 0
+            line-height: 0
+            border: none
+            background-color: black
+            overflow: hidden
+    .slick-active
+        button
+            width: 10px
+            height: 10px
+            background-color: red
+
+
+@media ( max-width:767px )
+    .carousel
+        &__inner
+            img
+                display: block
+                margin: 0 auto
+                max-width: 500px
+
+@media ( max-width:575px )
+    .carousel
+        &__inner
+            img
+                max-width: 300px  
+            
+
+        
+
+
+

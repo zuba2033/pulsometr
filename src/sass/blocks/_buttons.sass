@@ -6,23 +6,39 @@
     text-transform: uppercase
     color: #ffffff
     font-size: 16px
+    transition: 0.5s all
+    &:hover
+        box-shadow: 3px 3px 20px $main-color
     &_header
         margin-top: 8px
         width: 150px
         height: 30px
         font-size: 12px
+        &:hover
+            box-shadow: 3px 3px 30px #D7EED9
     &_promo
         margin-top: 65px
         width: 300px
         height: 50px
+        &:hover
+            box-shadow: 3px 3px 50px #D7EED9
     &_submit
         width: 100%
         height: 55px
-    
+        &:hover
+            box-shadow: 3px 3px 55px #CFDBF7
+    &_catalog-item
+        font-size: 14px
+        width: 131px
+        height: 40px
+        &:hover
+            box-shadow: 3px 3px 20px $main-color
     
 
 @media ( max-width:990px )
     .button
+        &:hover
+            box-shadow: none
         &_header
             margin-top: 6px
             width: 140px
