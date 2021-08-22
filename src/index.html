@@ -25,7 +25,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button button_header">заказать звонок</button>
+                    <button data-modal="consultation" class="button button_header">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -45,10 +45,10 @@
                         <div class="promo__icon-text">Ответим на все вопросы</div>
                     </div>
                 </div>
-                <button class="button button_promo">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_promo">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__catalogue">
                     или
-                    <a href="" class="promo__link">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    <a href="#catalog" class="promo__link">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                     <div class="advantages__item-title">Учим бегать</div>
                     <div class="advantages__item-text">Помогаем с обучением 
                         правильной технике бега! 
-                        Дружим с крупнейшей школой бега в России - <a href=""> I LOVE RUNNING.</a></div>
+                        Дружим с крупнейшей школой бега в России - <a href="https://ilovesupersport.com/running"> I LOVE RUNNING.</a></div>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
         </div>
 
     </section>
-    <section class="carousel">
+    <section class="carousel" >
         <div class="container">
             <div class="carousel__inner">
                 <div> <img src="img/4th_scr/slider_img1.jpg" alt=""> </div>
@@ -105,7 +105,7 @@
 
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog" >
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
@@ -481,7 +481,7 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal">
+        <div class="modal" id="consultation" >
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
@@ -491,6 +491,23 @@
                 <input required class="feed-form__input" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">заказать консультацию</button>
             </form>
+        </div>
+        <div class="modal" id="order" >
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form" action="#">
+                <input required class="feed-form__input" placeholder="Ваше имя" type="text">
+                <input required class="feed-form__input" placeholder="Ваш телефон" type="number">
+                <input required class="feed-form__input" placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">Купить</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="reply" >
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами 
+                в ближайшее время!</div>
         </div>
     </div>
 

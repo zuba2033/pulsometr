@@ -1,5 +1,6 @@
 
 .overlay
+    display: none
     position: fixed
     top: 0
     width: 100%
@@ -7,10 +8,42 @@
     background-color: rgba(0, 0, 0, 0.56)
 
 .modal
+    padding: 35px 38px 40px 38px
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     width: 380px
-    height: 400px
+    min-height: 400px
     background-color: #f2f2f2
+    &_mini
+        padding: 36px 76px 45px 76px
+        min-height: 140px
+    &__close
+        position: absolute
+        top: -4px
+        right: -30px
+        font-size: 32px
+        line-height: 24px
+        height: 24px
+        color: $main-color
+        font-weight: 700
+        cursor: pointer
+    &__subtitle
+        font-size: 19px
+        font-weight: 700
+        color: #0d0d0d
+        text-align: center
+    &__descr
+        text-align: center
+        font-size: 14px
+        font-weight: 500
+        color: #0d0d0d
+        margin-top: 6px
+        line-height: 1.2
+    .feed-form
+        margin-top: 25px
+
+
+#consultation, #order, #reply
+    display: none
