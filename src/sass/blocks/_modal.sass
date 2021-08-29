@@ -21,11 +21,10 @@
         min-height: 140px
     &__close
         position: absolute
-        top: -4px
+        top: 0
         right: -30px
         font-size: 32px
-        line-height: 24px
-        height: 24px
+        line-height: 13px
         color: $main-color
         font-weight: 700
         cursor: pointer
@@ -43,7 +42,34 @@
         line-height: 1.2
     .feed-form
         margin-top: 25px
+    .error
+        border: 1px solid red
+        text-align: center
+        line-height: 1
+        font-weight: 500
+        margin: 0 0 10px 0
+    label.error
+        border: none
+
 
 
 #consultation, #order, #reply
     display: none
+
+
+@media ( max-width:575px )
+    .modal
+        padding: 25px 20px 30px 20px
+        width: 270px
+        min-height: 350px
+        &__subtitle
+            font-size: 16px
+        &__descr
+            font-size: 13px
+        .button_submit
+            font-size: 14px
+        &__close
+            top: 0
+            right: -22px
+            font-size: 30px
+            line-height: 14px

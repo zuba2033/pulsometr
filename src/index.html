@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -64,7 +64,7 @@
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div> 
                 </div>
                 <div class="advantages__item"> 
-                    <img src="img/2nd_scr/icon_2_heart.png" alt="" class="advantages__icon">
+                    <img src="img/2nd_scr/icon_2_heart.png" alt="" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__item-title">Заботимся о здоровье</div>
                     <div class="advantages__item-text">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div> 
@@ -84,10 +84,10 @@
             <h2 class="title title_consultation">Получите бесплатную консультацию
                 по подбору пульсометра</h2>
             <div class="consultation__descr">Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form" action="#">
-                <input required class="feed-form__input" placeholder="Ваше имя" type="text">
-                <input required class="feed-form__input" placeholder="Ваш телефон" type="number">
-                <input required class="feed-form__input" placeholder="Ваш E-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" class="feed-form__input" placeholder="Ваше имя" type="text">
+                <input name="phone" class="feed-form__input" placeholder="Ваш телефон">
+                <input name="email" class="feed-form__input" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">заказать консультацию</button>
             </form>
         </div>
@@ -486,9 +486,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form" action="#">
-                <input required class="feed-form__input" placeholder="Ваше имя" type="text">
-                <input required class="feed-form__input" placeholder="Ваш телефон" type="number">
-                <input required class="feed-form__input" placeholder="Ваш E-mail" type="email">
+                <input name="name" class="feed-form__input" placeholder="Ваше имя" type="text">
+                <input name="phone" class="feed-form__input" placeholder="Ваш телефон">
+                <input name="email" class="feed-form__input" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">заказать консультацию</button>
             </form>
         </div>
@@ -497,9 +497,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form" action="#">
-                <input required class="feed-form__input" placeholder="Ваше имя" type="text">
-                <input required class="feed-form__input" placeholder="Ваш телефон" type="number">
-                <input required class="feed-form__input" placeholder="Ваш E-mail" type="email">
+                <input name="name" class="feed-form__input" placeholder="Ваше имя" type="text">
+                <input name="phone" class="feed-form__input" placeholder="Ваш телефон">
+                <input name="email" class="feed-form__input" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">Купить</button>
             </form>
         </div>
@@ -511,10 +511,14 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup"><img src="img/up.svg" alt=""></a>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js" ></script>
     <script src="js/script.js"></script>
 </body>
 
