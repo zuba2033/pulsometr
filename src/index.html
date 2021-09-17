@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/slick.css"/>
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" href="img/favicon.ico"type="image/x-icon">
+    
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Пульсометр</title>
 </head>
 <body>
     <section id="up" class="promo">
@@ -17,7 +15,7 @@
             <header class="header">
                 <a href="#" class="header__logo">
                     <img src="img/logo.png" alt="logo" class="header__img">
-                    <img src="img/logo_mini.png" alt="" class="logo_mini">
+                    <img src="img/logo_mini.png" alt="logo" class="logo_mini">
                 </a>
                 <div class="header__official">
                     Официальный представитель
@@ -34,15 +32,15 @@
                 <h2 class="promo__subtitle">с учётом Вашего уровня подготовки</h2>
                 <div class="promo__icons">
                     <div class="promo__icon">
-                        <img src="img/1st_scr/icon1_time.png" alt="timer">
+                        <img src="img/1st_scr/icon1_time.svg" alt="timer">
                         <div class="promo__icon-text">Время подбора: 10 минут</div>
                     </div>
                     <div class="promo__icon">
-                        <img src="img/1st_scr/icon2_deliver.png" alt="deliver">
+                        <img src="img/1st_scr/icon2_deliver.svg" alt="deliver">
                         <div class="promo__icon-text">Бесплатная доставка</div>
                     </div>
                     <div class="promo__icon">
-                        <img src="img/1st_scr/icon3_answer.png" alt="answer">
+                        <img src="img/1st_scr/icon3_answer.svg" alt="answer">
                         <div class="promo__icon-text">Ответим на все вопросы</div>
                     </div>
                 </div>
@@ -59,19 +57,19 @@
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__item"> 
-                    <img src="img/2nd_scr/icon_1_cup.png" alt="" class="advantages__icon">
+                    <img src="img/2nd_scr/icon_1_cup.svg" alt="" class="advantages__icon">
                     <div class="advantages__item-title">Делимся опытом</div>
                     <div class="advantages__item-text">Наши сотрудники всегда готовы поделиться своим опытом, 
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div> 
                 </div>
                 <div class="advantages__item"> 
-                    <img src="img/2nd_scr/icon_2_heart.png" alt="" class="advantages__icon animate__animated animate__infinite animate__heartBeat">
+                    <img src="img/2nd_scr/icon_2_heart.svg" alt="" class="advantages__icon animate__animated animate__infinite animate__heartBeat">
                     <div class="advantages__item-title">Заботимся о здоровье</div>
                     <div class="advantages__item-text">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div> 
                 </div>
                 <div class="advantages__item"> 
-                    <img src="img/2nd_scr/icon_3_shoe.png" alt="" class="advantages__icon">
+                    <img src="img/2nd_scr/icon_3_shoe.svg" alt="" class="advantages__icon">
                     <div class="advantages__item-title">Учим бегать</div>
                     <div class="advantages__item-text">Помогаем с обучением 
                         правильной технике бега! 
@@ -86,10 +84,10 @@
                 по подбору пульсометра</h2>
             <div class="consultation__descr">Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут</div>
             <form id="consultation-form" class="feed-form" action="#">
-                <input name="name" class="feed-form__input" placeholder="Ваше имя" type="text">
-                <input name="phone" class="feed-form__input" placeholder="Ваш телефон">
-                <input name="email" class="feed-form__input" placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">заказать консультацию</button>
+                <input name="name" required class="feed-form__input"  placeholder="Ваше имя" type="text" >
+                <input name="phone" required class="feed-form__input"  placeholder="Ваш телефон">
+                <input name="email" required class="feed-form__input"  placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit" >заказать консультацию</button>
             </form>
         </div>
 
@@ -424,7 +422,7 @@
             <h2 class="title title_feedback">
                 отзывы клиентов
             </h2>
-            <div class="feedback__item wow bounceInUp animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="5s" >
+            <div class="feedback__item wow bounceInUp animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s" >
                 <img src="img/6th_scr/feedback1.jpg" alt="" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__username">Ирина Иванченко</div>
@@ -440,7 +438,7 @@
                 </div>
             </div>
             <hr>
-            <div class="feedback__item wow bounceInUp animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="5s">
+            <div class="feedback__item wow bounceInUp animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <img src="img/6th_scr/feedback2.jpg" alt="" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__username">Иван Сёмочкин</div>
@@ -452,7 +450,7 @@
                 </div>
             </div>
             <hr>
-            <div class="feedback__item wow bounceInUp animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="5s" >
+            <div class="feedback__item wow bounceInUp animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s" >
                 <img src="img/6th_scr/feedback3.jpg" alt="" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__username">Юлия Дашкина</div>
@@ -487,10 +485,10 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form" action="#">
-                <input name="name" class="feed-form__input" placeholder="Ваше имя" type="text">
-                <input name="phone" class="feed-form__input" placeholder="Ваш телефон">
-                <input name="email" class="feed-form__input" placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">заказать консультацию</button>
+                <input name="name" required class="feed-form__input" placeholder="Ваше имя" type="text">
+                <input name="phone" required class="feed-form__input" placeholder="Ваш телефон">
+                <input name="email" required class="feed-form__input" placeholder="Ваш E-mail" type="email">
+                <button type="submit" class="button button_submit">заказать консультацию</button>
             </form>
         </div>
         <div class="modal" id="order" >
@@ -498,10 +496,10 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form" action="#">
-                <input name="name" class="feed-form__input" placeholder="Ваше имя" type="text">
-                <input name="phone" class="feed-form__input" placeholder="Ваш телефон">
-                <input name="email" class="feed-form__input" placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">Купить</button>
+                <input name="name" required class="feed-form__input" placeholder="Ваше имя" type="text">
+                <input name="phone" required class="feed-form__input" placeholder="Ваш телефон">
+                <input name="email" required class="feed-form__input" placeholder="Ваш E-mail" type="email">
+                <button type="submit" class="button button_submit">Купить</button>
             </form>
         </div>
         <div class="modal modal_mini" id="reply" >
@@ -514,13 +512,13 @@
 
     <a href="#up" class="pageup"><img src="img/up.svg" alt=""></a>
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js" ></script>
-    <script src="js/wow.js" ></script>
+    <script src="js/wow.min.js" ></script>
     <script src="js/script.js"></script>
 </body>
 
